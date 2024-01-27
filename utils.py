@@ -1,11 +1,14 @@
 from string import ascii_lowercase
 import random
+from database.dao import fetch_all_shorturls
+from database.database import db
 
-# configurations
+# Configurations
 BASE_URL = "https://urlshortener.adhiraj.live"  # "http://localhost:8000"
 SHORTENED_URL_LENGTH = 8
 
-urls = {}
+
+urls = fetch_all_shorturls(db)
 
 
 def generate_short_url(length):
