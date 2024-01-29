@@ -57,4 +57,7 @@ async def admin(request: Request):
 @app.get("/{shorturl}")
 async def redirect(shorturl: str):
     longurl = fetch_longurl(db, shorturl)
-    return RedirectResponse(url=longurl)
+    if longurl != None:
+        return RedirectResponse(url=longurl)
+    else:
+        return RedirectResponse("/")
