@@ -48,3 +48,13 @@ def fetch_all_shorturls(conn):
         return [i[0] for i in res]
     except Exception as e:
         print(e)
+
+
+def fetch_all_urls(conn):
+    try:
+        c = conn.cursor()
+        c.execute("""SELECT * FROM urls""")
+        res = c.fetchall()
+        return res
+    except Exception as e:
+        print(e)
