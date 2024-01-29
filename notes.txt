@@ -1,2 +1,0 @@
-1. Fix if no url present in db, result to not found page
-2. url api, add/delete, integrate using js
