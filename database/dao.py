@@ -21,7 +21,7 @@ def create_table(conn):
         print(e)
 
 
-def insert_data(conn, shorturl, longurl):
+def insert_urls(conn, shorturl, longurl):
     try:
         c = conn.cursor()
         c.execute("""INSERT INTO urls (shorturl, longurl) VALUES (?, ?)""", (shorturl, longurl))
@@ -54,6 +54,16 @@ def fetch_all_urls(conn):
     try:
         c = conn.cursor()
         c.execute("""SELECT * FROM urls""")
+        res = c.fetchall()
+        return res
+    except Exception as e:
+        print(e)
+
+
+def delete_url(conn, id):
+    try:
+        c = conn.cursor()
+        c.execute("""DELETE FROM urls WHERE id=?;""", (id,))
         res = c.fetchall()
         return res
     except Exception as e:
