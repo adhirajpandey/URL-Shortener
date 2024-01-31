@@ -37,7 +37,7 @@ def fetch_longurl(conn, shorturl):
         c.execute("""SELECT longurl FROM urls WHERE shorturl=?""", (shorturl,))
         return c.fetchone()[0]
     except Exception as e:
-        print(e)
+        return None
 
 
 def fetch_all_shorturls(conn):
