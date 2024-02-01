@@ -32,5 +32,6 @@ Test it out at: https://urlshortener.adhiraj.live/
 
 
 ## Sample
+![shortener_demo](https://github.com/adhirajpandey/URL-Shortener/assets/87516052/bd9b2366-8c0a-46af-ab3f-54c3d28876ad)
 
 
