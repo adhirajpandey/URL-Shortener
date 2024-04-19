@@ -4,7 +4,7 @@ from database.dao import fetch_all_shorturls
 from database.database import db
 
 # Configurations
-BASE_URL = "https://urlshortener.adhiraj.live"  # "http://localhost:8000"
+BASE_URL = "https://urlshortener.adhirajpandey.me"  # "http://localhost:8000"
 SHORTENED_URL_LENGTH = 8
 
 

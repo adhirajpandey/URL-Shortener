@@ -6,7 +6,7 @@ This web application enables users to shorten their long urls and share them for
 
 HTML, CSS and Bootstrap used for frontend and FastAPI for backend.
 
-Test it out at: https://urlshortener.adhiraj.live/
+Test it out at: https://urlshortener.adhirajpandey.me/
 
 
 ## Features
